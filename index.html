@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCopy — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.7;
+      padding: 40px 16px 80px;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 48px 56px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: #6366f1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Inline SVG envelope */
+    .logo svg { width: 28px; height: 28px; }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 32px 0 10px;
+    }
+
+    p { font-size: 15px; color: #334155; margin-bottom: 12px; }
+
+    ul {
+      margin: 8px 0 12px 20px;
+      font-size: 15px;
+      color: #334155;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #eef2ff;
+      border-left: 3px solid #6366f1;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #3730a3;
+    }
+
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo">
+        <!-- Envelope icon -->
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="7" width="24" height="16" rx="1" stroke="white" stroke-width="1.8" fill="none"/>
+          <polyline points="2,7 14,17 26,7" stroke="white" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <h1>AutoCopy — Privacy Policy</h1>
+        <p>Last updated: May 27, 2026</p>
+      </div>
+    </header>
+
+    <div class="highlight">
+      AutoCopy does not collect, transmit, or store any personal data on external servers.
+      All data lives exclusively in your own browser's Chrome sync storage.
+    </div>
+
+    <h2>What AutoCopy Does</h2>
+    <p>
+      AutoCopy is a Chrome extension for Gmail that automatically adds BCC and CC recipients
+      to outgoing emails based on rules you define. Rules are evaluated entirely on your device —
+      no email content, addresses, or metadata is ever sent anywhere outside your browser.
+    </p>
+
+    <h2>Data We Collect</h2>
+    <p>AutoCopy collects no personal data. The only information the extension stores is the
+    rules you create yourself, which may include:</p>
+    <ul>
+      <li>Rule names you assign</li>
+      <li>Email addresses you enter as BCC/CC targets</li>
+      <li>Matching conditions (recipient addresses or domains, subject keywords, schedule)</li>
+      <li>Your enabled/disabled preference for the extension</li>
+    </ul>
+    <p>
+      This data is stored exclusively using the browser's built-in
+      <code>chrome.storage.sync</code> API, which means it is synced across your own devices
+      through your personal Google Chrome account — the same way your bookmarks and settings sync.
+      It is never transmitted to any server operated by AutoCopy or any third party.
+    </p>
+
+    <h2>Permissions Explained</h2>
+    <ul>
+      <li>
+        <strong>storage</strong> — Required to save and sync your rules across Chrome devices
+        using the browser's own sync infrastructure.
+      </li>
+      <li>
+        <strong>Access to mail.google.com</strong> — Required to detect when a Gmail compose
+        window opens and to inject BCC/CC recipient chips into it. AutoCopy reads only the
+        To/Subject fields needed to evaluate your rules, and writes only to the BCC/CC fields.
+        No email content is read, stored, or transmitted.
+      </li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      AutoCopy does not use any analytics, advertising, crash-reporting, or other third-party
+      services. There are no external network requests of any kind.
+    </p>
+
+    <h2>Data Sharing</h2>
+    <p>
+      We do not sell, trade, or otherwise share any data. Because no data is collected by us,
+      there is nothing to share.
+    </p>
+
+    <h2>Data Retention &amp; Deletion</h2>
+    <p>
+      Your rules are stored in <code>chrome.storage.sync</code> and persist until you delete
+      them through the extension's Manage Rules page, or until you uninstall the extension.
+      Uninstalling AutoCopy removes all locally stored data. You can also delete individual
+      rules or use the "Clear All Rules" option at any time.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      AutoCopy is not directed at children under 13 and does not knowingly collect any
+      information from children.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      If this policy is ever updated, the revised date at the top of this page will reflect
+      the change. Significant changes will also be noted in the extension's update release notes.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be sent to:
+      <a href="mailto:dev@coldstart.org">dev@coldstart.org</a>
+    </p>
+
+    <footer>
+      &copy; 2026 AutoCopy. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
